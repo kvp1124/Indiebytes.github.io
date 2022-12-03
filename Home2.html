@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- DEVELOPER: Krish Patel, IS117-101, Fall 2022 -->
 
 <head>
     <meta charset="UTF-8">
@@ -37,11 +38,23 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Shakes&Drinks.html">Drinks & Shakes</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="Recipes.html">Recipe</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         </div>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Recipes.html" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Recipes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Recipes.html">Recipes</a>
+                            <a class="dropdown-item" href="Lunch_Brunch.html">Breakfast & Brunch</a>
+                            <a class="dropdown-item" href="Dinner.html">Dinner</a>
+                        </div>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link " href="Contact form.html">Contact</a>
                     </li>
@@ -55,7 +68,7 @@
     </header>
     <!--------------------Body--------------------------------------- -->
     <main role="main">
-
+        <!-- Carousel----------------- -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -65,7 +78,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active ">
                     <div class="carousel-caption d-none d-md-block" style="font-family:autoplay">
-                        <h1 clas="font-weight-bold">Indi Bytes</h1>
+                        <h1 class="font-weight-bold">Indi Bytes</h1>
                         <h2>Taste of your choice...</h2>
                     </div>
                     <img class="first-slide w-100 .img-fluid. max-width: 100% height: auto;" src="Data/1.png"
@@ -75,7 +88,7 @@
 
                 <div class="carousel-item">
                     <div class="carousel-caption d-none d-md-block" style="font-family:autoplay">
-                        <h1 clas="font-weight-bold">Quick and Healthy</h1>
+                        <h1 class="font-weight-bold">Quick and Healthy</h1>
                         <h2>🥙🧑‍🍳🥗</h2>
                     </div>
                     <img class="second-slide w-100 .img-fluid. max-width: 100% height: auto;" src="Data/2.png"
@@ -85,28 +98,26 @@
 
                 <div class="carousel-item">
                     <div class="carousel-caption d-none d-md-block" style="font-family:autoplay">
-                        <h1 clas="font-weight-bold">Yummy</h1>
+                        <h1 class="font-weight-bold">Yummy</h1>
                         <h2>Cuisines</h2>
                     </div>
                     <img class="third-slide w-100 .img-fluid. max-width: 100% height: auto;" src="Data/3.png"
                         alt="Pizza">
                 </div>
             </div>
-        </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        </div>
 
-
-        <div class="space ">
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
 
         </div>
+
+        <div class="space "></div>
 
 
         <!----------------Cards------------------------------>
@@ -118,9 +129,11 @@
                         <img class="card-img-top" src="Data/Card1.png" alt="Panner">
                         <div class="card-body">
                             <h2 class="card-heading">Paneer</h2>
-                            <p class="card-text">The steps are straightforward: you marinade the paneer in yogurt and
-                                spices, let it sit for a while to let the flavors meld, then skewer the paneer cubes
-                                with onion and peppers and grill them.</p>
+                            <p class="card-text"> Yogurt, ginger-garlic paste, turmeric, red chill, corriander, garam
+                                masala, Kasuri methi, lime juice, and salt should all be combined in a sizable mixing
+                                basin. All of it has been thoroughly combined. To the bowl, add paneer, bell peppers,
+                                and onions. Toss everything together thoroughly to coat. Enjoy after a short time in the
+                                oven!</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <small class="text-muted">Time 90 mins</small>
                             </div>
@@ -133,10 +146,11 @@
                         <img class="card-img-top" src="Data/Card2.png" alt="Tofu mix">
                         <div class="card-body">
                             <h2 class="card-heading">Tofu Mix</h2>
-                            <p class="card-text">We toast the peppers. This step can be skipped if you already
-                                have homemade toasted chili oil. Your wok or should be warm. Throw in
-                                the dried and fresh peppers after adding cup of oil.
-                            </p>
+                            <p class="card-text">Place the shiitake mushrooms in water, then discard the water.
+                                It is necessary for the sauce. To eliminate extra water, squeeze the dried shiitake
+                                mushrooms, then slice them finely. Bring them and the button mushrooms together in a
+                                basin. Stir in the leeks, ginger, and garlic for 4 minutes. Place the vegetables in a
+                                bowl and serve.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <small class="text-muted">Time 20 mins</small>
                             </div>
@@ -148,9 +162,10 @@
                         <img class="card-img-top" src="Data/Card4.png" alt="Burger">
                         <div class="card-body">
                             <h2 class="card-heading">Special Burger</h2>
-                            <p class="card-text">The cabbage should be massaged until mushy in a big basin with 1
-                                tablespoon of kosher salt. Then put it the patty and girll it in oven with the choice of
-                                sides and sauces you like.</p>
+                            <p class="card-text">The cabbage should be massaged for about 4 minutes in a large
+                                dish with 1 tablespoon of kosher salt, until it softens and releases its moisture. Rinse
+                                and drain the cabbage in a colander. Then select your preferred grilled patty and season it
+                                with Italian oregano. Combine everything, then choose your favorite dip like Caramelized Onion or ketchup. </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <small class="text-muted">Time 30 mins</small>
                             </div>
@@ -161,7 +176,7 @@
             </div>
         </div>
 
-
+        <!-- --------------Video---------------- -->
         <div class="container p-4 ">
             <div class="row">
                 <div class="embed-responsive embed-responsive-16by9">
@@ -175,8 +190,8 @@
         <!-- -----------------------Footer----------------------------- -->
 
         <!-- Copyright -->
-        <div class="text-center p-5 bg-dark">
-            <a class="text-light">© 2022 Copyright</a>
+        <div class="text-center p-5 bg-dark footer">
+            <a class="text-light">© 2022 Indi bytes, All rights reserved </a>
             <a class="text-light" href="#">Back to top</a>
         </div>
 
@@ -188,18 +203,14 @@
 
     <!-- Bootstrap core JavaScript
         ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="../../assets/js/vendor/holder.min.js"></script>
+
 </body>
 
 </html>
 
 <!-- DEVELOPER: Krish Patel, IS117-101, Fall 2022 ->
-/*DEVELOPER: Krish Patel, IS117-101, Fall Fall 2022 */
+/* DEVELOPER Krish Patel, IS117-101, Fall 2022 */

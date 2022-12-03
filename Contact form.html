@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- DEVELOPER: Krish Patel, IS117-101, Fall 2022 -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,167 +19,177 @@
 </head>
 
 <body>
-    <!-----nevbar--------------------------------------------->
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="Home2.html">
-                <img src="Data/Logo.png" alt="" style="width:60px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="Home2.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Shakes&Drinks.html">Drinks & Shakes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="Recipes.html">Recipes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="Contact form.html">Contact</a>
-                    </li>
-                </ul>
-                <form class="form-inline mt-2 mt-md-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-    </header>
-    <!-------------------------------Body------------------------------>
-
-
-
-    <section class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 text-center mb-5">
-                    <h2 class="heading-section">Contact Us</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="wrapper">
-                        <div class="row no-gutters">
-                            <div class="col-md-6 d-flex align-items-stretch">
-                                <div class="contact-wrap w-100 p-md-5 p-4 py-5">
-                                    <h3 class="mb-4">Send Email</h3>
-                                    <div id="form-message-warning" class="mb-4"></div>
-                                    <div id="form-message-success" class="mb-4">
-                                    </div>
-                                    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="name" id="name"
-                                                        placeholder="Name">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="email" class="form-control" name="email" id="email"
-                                                        placeholder="Email">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="Phone Number" class="form-control" name="Phone Number"
-                                                        id="Phone Number" placeholder="Phone Number">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="subject" id="subject"
-                                                        placeholder="Subject">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <textarea name="message" class="form-control" id="message" cols="30"
-                                                        rows="6" placeholder="Message"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="submit" value="Send Message" class="btn btn-primary">
-                                                    <div class="submitting"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+    <main role="main">
+        <!-----nevbar--------------------------------------------->
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                
+                <a class="navbar-brand" href="Home2.html">
+                    <img src="Data/Logo.png" alt="Logo" style="width:60px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Home2.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Shakes&Drinks.html">Drinks & Shakes</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="Recipes.html" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Recipes
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="Recipes.html">Recipes</a>
+                                <a class="dropdown-item" href="Lunch_Brunch.html">Breakfast & Brunch</a>
+                                <a class="dropdown-item" href="Dinner.html">Dinner</a>
                             </div>
-                            <div class="col-md-6 d-flex align-items-stretch">
-                                <div class="info-wrap w-100 p-md-5 p-4 py-5 img">
-                                    <h3>Contact information</h3>
-                                    <div class="dbox w-100 d-flex align-items-start">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <span class="fa fa-map-marker"></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="Contact form.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <!-------------------------------Body------------------------------>
+
+
+
+        <section class="ftco-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center mb-5">
+                        <h2 class="heading-section">Contact Us</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="wrapper">
+                            <div class="row no-gutters">
+                                <div class="col-md-6 d-flex align-items-stretch">
+                                    <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                        <h3 class="mb-4">Send Email</h3>
+                                        <div id="form-message-warning" class="mb-4"></div>
+                                        <div id="form-message-success" class="mb-4">
                                         </div>
-                                        <div class="text pl-3">
-                                            <p><span>Address:</span> 80 South 10th Street, Suite 16 New York NY
-                                                10016</p>
+                                        <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="name" id="name"
+                                                            placeholder="Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" name="email" id="email"
+                                                            placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="Phone Number" class="form-control"
+                                                            name="Phone Number" id="Phone Number"
+                                                            placeholder="Phone Number">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="subject"
+                                                            id="subject" placeholder="Subject">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <textarea name="message" class="form-control" id="message"
+                                                            cols="30" rows="6" placeholder="Message"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="submit" value="Send Message"
+                                                            class="btn btn-primary">
+                                                        <div class="submitting"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex align-items-stretch">
+                                    <div class="info-wrap w-100 p-md-5 p-4 py-5 img">
+                                        <h3>Contact information</h3>
+                                        <div class="dbox w-100 d-flex align-items-start">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="fa fa-map-marker"></span>
+                                            </div>
+                                            <div class="text pl-3">
+                                                <p><span>Address:</span> 80 South 10th Street, Suite 16 New York NY
+                                                    10016</p>
+                                            </div>
+                                        </div>
+                                        <div class="dbox w-100 d-flex align-items-center">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="fa fa-phone"></span>
+                                            </div>
+                                            <div class="text pl-3">
+                                                <p><span>Phone:</span> <a href="tel://1234567920">+1 (123)-456-7890 </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="dbox w-100 d-flex align-items-center">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="fa fa-paper-plane"></span>
+                                            </div>
+                                            <div class="text pl-3">
+                                                <p><span>Email:</span> <a><span
+                                                            class="__cf_email__">IndiBytes@gmail.com&#160;</span></a>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="dbox w-100 d-flex align-items-center">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <span class="fa fa-phone"></span>
-                                        </div>
-                                        <div class="text pl-3">
-                                            <p><span>Phone:</span> <a href="tel://1234567920">+1 (123)-456-7890 </a></p>
-                                        </div>
-                                    </div>
-                                    <div class="dbox w-100 d-flex align-items-center">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <span class="fa fa-paper-plane"></span>
-                                        </div>
-                                        <div class="text pl-3">
-                                            <p><span>Email:</span> <a><span
-                                                        class="__cf_email__">IndiBytes@gmail.com&#160;</span></a>
-                                            </p>
-                                        </div>
-                                    </div>                         
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+
+
+
+
+
+        <!-- -----------------------Footer----------------------------- -->
+        <div class="container p-4"></div>
+        <!-- Copyright -->
+        <div class="footer text-center p-5 bg-dark">
+            <a class="text-light">© 2022 Copyright</a>
+            <a class="text-light" href="#">Back to top</a>
         </div>
-    </section>
-
-
-
-
-
-
-    <!-- -----------------------Footer----------------------------- -->
-    <div class="container p-4"></div>
-    <!-- Copyright -->
-    <div class="text-center p-5 bg-dark">
-        <a class="text-light">© 2022 Copyright</a>
-        <a class="text-light" href="#">Back to top</a>
-    </div>
     </main>
 
 
 
     <!-- Bootstrap core JavaScript
         ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="../../assets/js/vendor/holder.min.js"></script>
+    
 </body>
+
 </html>
